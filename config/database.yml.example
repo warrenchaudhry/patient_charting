@@ -4,8 +4,8 @@ default: &default
   port: 5432
   pool: 5
   host: localhost
-  username: wchaudhry
-  password: SQL12sql
+  username: <=% ENV["DATABASE_USERNAME"] %>
+  password: <=% ENV["DATABASE_PASSWORD"] %>
 
 development:
   <<: *default

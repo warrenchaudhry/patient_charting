@@ -21,3 +21,17 @@
 /yarn-error.log
 
 .byebug_history
+/public/packs
+/public/packs-test
+/node_modules
+
+# Ignore IDEA config
+/.idea/*
+.env
+.rspec
+.vscode
+# Ignore application configuration
+/config/application.yml
+/config/database.yml
+vendor/assets/bower_components
+public/assets/**

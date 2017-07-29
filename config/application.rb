@@ -14,5 +14,13 @@ module PatientCharting
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
+    config.autoload_paths += %W(\#{config.root}/lib)
+    config.generators do |g|
+      g.template_engine :slim
+      g.stylesheets     false
+      g.javascripts     false
+      g.test_framework :rspec
+      g.fixture_replacement :factory_girl, dir: "spec/factories"
+    end
   end
 end
